@@ -1,0 +1,17 @@
+{
+  "name": "rest-facebook",
+  "version": "1.0.0",
+  "description": "Rest API for facebook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "author": "Anthony Tamayo Ortega",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^14.5.8"
+  }
+}
