@@ -1,23 +1,72 @@
 type Query{
     getAuthors:[Author]!
+    getSingleAuthor(id:ID):Author!
+    getPosts:[Post]!
+    getSinglePost(id:ID): Post!
 }
+
+type Mutation{
+    createNewAuthor(data:AuthorInput!):Author!
+    updateOneAuthor(id:ID!, data:AuthorInputUpdate!):Author!
+    deleteOneAuthor(id:ID!):String!
+    createNewPost(data:PostInput!):Post!
+    updateOnePost(id:ID!, data:PostInputUpdate!):Post!
+    deleteOnePost(id:ID!):String!
+}
+
 type Author{
-    _id: ID!
-    first_name: String!
-    last_name: String!
-    email: String!
-    birth_date: String!
-    posts: [Post]!
+    _id:ID!
+    first_name:String!
+    last_name:String!
+    email:String!
+    birth_date:String!
+    posts:[Post]!
     gender: GENDERS
-    profile_pic: String!
+    profile_pic:String!
 }
+
+input AuthorInput{
+    first_name:String!
+    last_name:String!
+    email:String!
+    birth_date:String
+    gender: GENDERS
+    profile_pic:String
+}
+
+input AuthorInputUpdate{
+    first_name:String
+    last_name:String
+    email:String
+    birth_date:String
+    gender: GENDERS
+    profile_pic:String
+    is_active:Boolean
+}
+
 type Post{
     _id:ID!
-    title:String!
+    title: String!
     content:String!
-    author:Author!
-    cover:String!
-    linked_by:[Author]
+    author: Author
+    cover: String!
+    is_active: Boolean
+}
+
+input PostInput{
+    title: String!
+    content:String!
+    author: ID
+    cover: String
+    is_active: Boolean
+}
+
+input PostInputUpdate{
+    title: String
+    content:String
+    cover: String
+    liked_by: String
+    is_active: Boolean
 }
 
 enum GENDERS{

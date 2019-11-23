@@ -1,11 +1,11 @@
 {
-  "name": "rest-facebook",
+  "name": "b36-backend",
   "version": "1.0.0",
-  "description": "Rest API for facebook",
+  "description": "backend batch 36",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "feature/configuration": "nodemon index.js"
+    "feature/crud": "nodemon index.js -f *.graphql"
   },
   "keywords": [
     "graphql"

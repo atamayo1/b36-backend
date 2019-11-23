@@ -22,14 +22,7 @@ const typeDefs = importSchema( __dirname + '/schema.graphql' );
 
 const server = new GraphQLServer({typeDefs, resolvers});
 
-server.start(() => console.log('Trabajando con graphql en puerto 4000'));
+const port  = process.env.PORT || 4000;
 
-const person = {
-  name: 'Anthony',
-  age: 25
-};
+server.start({port},() => console.log(`Trabajando con graphql en puerto ${port}`));
 
-const student = {
-  enrollment: 1293439,
-    ... person
-};

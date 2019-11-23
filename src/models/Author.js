@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const AuthorSchema = new Schema({
-    firs_name:{
+    first_name:{
         type: String,
         required: true,
     },
