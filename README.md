@@ -6,11 +6,17 @@ npm init
 
 **Instalaciones Consola:**
 
+npm install graphql
+
 npm install graphql-yoga
+
+npm install dotenv
+
+npm install mongoose
 
 npm install nodemon --save-dev
 
-npm i eslint
+npm install eslint
 
 npm run dev -> para inicializar el proyecto
 
