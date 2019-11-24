@@ -1,5 +1,9 @@
 # Api Rest con GraphQL
 
+**Para comenzar el proyecto en consola:**
+
+npm init
+
 **Instalaciones Consola:**
 
 npm install graphql-yoga
