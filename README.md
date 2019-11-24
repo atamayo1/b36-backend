@@ -1,6 +1,6 @@
 # Api Rest con GraphQL
 
-/**Instalaciones Consola:
+**Instalaciones Consola:**
 
 npm install graphql-yoga
 
@@ -10,7 +10,7 @@ npm i eslint
 
 npm run dev -> para inicializar el proyecto
 
-/**GIT Consola:
+GIT Consola:
 
 git commit -m "first commit"
 
@@ -31,13 +31,13 @@ git pull dev
 git push origin rama
 
 
-/**MongoDB Atlas:
+**MongoDB Atlas:**
 
 user: anthony1_144@hotmail.com constraseña: ********
 
 userAdmin: anthonyto
 
-/**Consola:
+**Consola:**
 
 eslint --init
 
