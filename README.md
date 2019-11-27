@@ -72,3 +72,7 @@ eslint --init
 ? What line endings do you use? Unix
 
 ? Do you require semicolons? Yes
+
+**Autenticación:**
+
+npm i bcrypt jwt
