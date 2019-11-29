@@ -76,3 +76,11 @@ eslint --init
 **Autenticación:**
 
 npm i bcrypt jwt
+
+**Cloudinary:**
+
+npm i cloudinary
+
+**Problems when i update version of node.js bcrypt, solution:**
+
+npm rebuild bcrypt --update-binary

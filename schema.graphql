@@ -12,7 +12,7 @@ type Query{
 }
 
 type Mutation{
-    createNewAuthor(data:AuthorInput!):Author!@auth
+    createNewAuthor(data:AuthorInput!):Author!
     updateOneAuthor(id:ID!, data:AuthorInputUpdate!):Author!@auth
     deleteOneAuthor(id:ID!):String!@auth
     createNewPost(data:PostInput!):Post!@auth
@@ -62,7 +62,7 @@ type Post{
     title: String!
     content:String!
     author: Author!
-    cover: String!
+    cover: URL!
     liked_by: [Author]
     is_active: Boolean
 }
@@ -71,14 +71,14 @@ input PostInput{
     title: String!
     content:String!
     author: ID
-    cover: String
+    cover: Upload
     is_active: Boolean
 }
 
 input PostInputUpdate{
     title: String
     content:String
-    cover: String
+    cover: Upload
     liked_by: String
     is_active: Boolean
 }

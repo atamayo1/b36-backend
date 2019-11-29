@@ -1,6 +1,10 @@
 const Posts = require('../models');
 
-const createPost = (data) => Posts.create(data);
+const createPost = async (data) => {
+    const post = await Posts.create(data);
+    const populatePost = await getOnePost(post._id);
+    return populatePost;
+};
 const getAllPosts = () => Posts.find({
     is_active: true
 }).populate({
