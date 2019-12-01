@@ -84,3 +84,7 @@ npm i cloudinary
 **Problems when i update version of node.js bcrypt, solution:**
 
 npm rebuild bcrypt --update-binary
+
+**Instalar Jest para Unit Testing**
+
+npm install --save-dev jest
