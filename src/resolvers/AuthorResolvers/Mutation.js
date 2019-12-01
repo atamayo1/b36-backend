@@ -1,4 +1,5 @@
 const { createAuthor, updateAuthor, deleteAuthor } = require('../../services/AuthorService');
+const authenticate = require('../../utils/authenticate');
 
 const createNewAuthor =  async (_, {data}) => {
     const author = await createAuthor(data);
@@ -17,8 +18,17 @@ const deleteOneAuthor = async (_, {id}) => {
     return 'Author deleted';
 };
 
+const login = async (_, params) => {
+  const token = await authenticate(params).catch(e => { throw e; });
+  return  {
+      token: token,
+      message: 'Login Successful'
+    }
+};
+
 module.exports = {
     createNewAuthor,
     updateOneAuthor,
-    deleteOneAuthor
+    deleteOneAuthor,
+    login
 };

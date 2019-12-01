@@ -4,7 +4,7 @@
   "description": "backend batch 36",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "set NODE_ENV=test && jest --detectOpenHandles",
     "dev": "nodemon index.js -f *.graphql"
   },
   "keywords": [
@@ -13,10 +13,15 @@
   "author": "Anthony Tamayo Ortega",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.7",
+    "cloudinary": "^1.17.0",
     "dotenv": "^8.2.0",
     "eslint": "^6.6.0",
     "graphql": "^14.5.8",
+    "graphql-scalars": "^1.0.4",
     "graphql-yoga": "^1.18.3",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.12"
   },
   "devDependencies": {

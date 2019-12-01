@@ -72,3 +72,19 @@ eslint --init
 ? What line endings do you use? Unix
 
 ? Do you require semicolons? Yes
+
+**Autenticación:**
+
+npm i bcrypt jwt
+
+**Cloudinary:**
+
+npm i cloudinary
+
+**Problems when i update version of node.js bcrypt, solution:**
+
+npm rebuild bcrypt --update-binary
+
+**Instalar Jest para Unit Testing**
+
+npm install --save-dev jest
