@@ -5,5 +5,8 @@
       <option name="USE_DOUBLE_QUOTES" value="false" />
       <option name="FORCE_QUOTE_STYlE" value="true" />
     </JSCodeStyleSettings>
+    <MultiMarkdownCodeStyleSettings>
+      <option name="RIGHT_MARGIN" value="72" />
+    </MultiMarkdownCodeStyleSettings>
   </code_scheme>
 </component>
